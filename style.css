@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f6f9fc, #e9f1fa);
+    color: #333;
+    padding: 20px;
+}
+
+.app {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.reminder {
+    background: #f1f7ff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.reminder h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3478f6;
+}
+
+.reminder label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 calc(var(--p) * 1%), #e0e0e0 0);
+    margin: auto;
+    margin-top: 8px;
+}
+
+.calendar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3478f6;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.day {
+    padding: 10px 0;
+    border: none;
+    background: #e0ebff;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #3478f6;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.day:hover {
+    background: #cfe0ff;
+}
+
+.expandable {
+    background: #f9fbfe;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+.inputs label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
