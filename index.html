@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fitness & Diet Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Hello, John</h1>
+            <div class="reminder">
+                <h2>Reminder Habit</h2>
+                <label><input type="checkbox" checked> Studied</label>
+                <label><input type="checkbox"> Work</label>
+                <label><input type="checkbox"> Running</label>
+            </div>
+        </header>
+
+        <section class="progress">
+            <div>
+                <p>Work</p>
+                <div class="circle" style="--p:45"></div>
+            </div>
+            <div>
+                <p>Yoga</p>
+                <div class="circle" style="--p:50"></div>
+            </div>
+            <div>
+                <p>Studied</p>
+                <div class="circle" style="--p:30"></div>
+            </div>
+        </section>
+
+        <section class="calendar">
+            <h2>Activities</h2>
+            <div class="days">
+                <button class="day" data-day="Mon">Mon</button>
+                <button class="day" data-day="Tue">Tue</button>
+                <button class="day" data-day="Wed">Wed</button>
+                <button class="day" data-day="Thu">Thu</button>
+                <button class="day" data-day="Fri">Fri</button>
+                <button class="day" data-day="Sat">Sat</button>
+                <button class="day" data-day="Sun">Sun</button>
+            </div>
+
+            <div class="expandable">
+                <div id="activity-list"></div>
+            </div>
+        </section>
+
+        <section class="inputs">
+            <label>Weight: <input type="number" id="weightInput"> kg</label>
+            <label>Body Fat: <input type="number" id="fatInput"> %</label>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
